@@ -16,7 +16,7 @@ from LDMX.SimCore import simulator
 from LDMX.SimCore import generators
 sim = simulator.simulator("single_neutron")
 sim.setDetector( 'ldmx-det-v12' , True )
-sim.runNumber = 0
+p.run = 0
 sim.description = "HCal neutron"
 sim.beamSpotSmear = [20., 80., 0.] #mm
 particle_gun = generators.gun( "single_neutron_upstream_hcal")

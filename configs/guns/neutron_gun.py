@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(f'ldmx fire {sys.argv[0]}')
 parser.add_argument('energy',type=float)
 arg = parser.parse_args()
 
-nevents = 1000 # number of events
+nevents = 500 # number of events
 energy = arg.energy
 
 from LDMX.SimCore import simulator
